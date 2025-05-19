@@ -14,9 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Sensitive Content Classifier Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
-      ),
+      theme: ThemeData(primarySwatch: Colors.deepPurple),
       home: const ContentCheckPage(),
     );
   }
@@ -39,8 +37,7 @@ class _ContentCheckPageState extends State<ContentCheckPage> {
   Future<void> _classifyImage() async {
     setState(() => _isLoading = true);
 
-    final result =
-        await _classifier.analyseIsSensitiveContentFromImageProvider(
+    final result = await _classifier.analyseIsSensitiveContentFromImageProvider(
       imageProvider: const AssetImage('assets/images/no_wifi.jpg'),
       text: 'This image might contain sensitive content.',
     );
@@ -73,9 +70,7 @@ class _ContentCheckPageState extends State<ContentCheckPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Content Classifier Demo'),
-      ),
+      appBar: AppBar(title: const Text('Content Classifier Demo')),
       body: Padding(
         padding: const EdgeInsets.all(20),
         child: Column(

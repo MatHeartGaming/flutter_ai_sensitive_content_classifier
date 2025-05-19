@@ -12,8 +12,6 @@ class AiClassificationResponse {
     required this.isSensitive,
   });
 
-  
-
   Map<String, dynamic> toMap() {
     return <String, dynamic>{
       'imageClassification': imageClassification,
@@ -32,7 +30,10 @@ class AiClassificationResponse {
 
   String toJson() => json.encode(toMap());
 
-  factory AiClassificationResponse.fromJson(String source) => AiClassificationResponse.fromMap(json.decode(source) as Map<String, dynamic>);
+  factory AiClassificationResponse.fromJson(String source) =>
+      AiClassificationResponse.fromMap(
+        json.decode(source) as Map<String, dynamic>,
+      );
 
   AiClassificationResponse copyWith({
     String? imageClassification,
