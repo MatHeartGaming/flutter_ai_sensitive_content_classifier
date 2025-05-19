@@ -1,6 +1,6 @@
 name: ai_sensitive_content_classifier
 description: "A package that uses Gemini to detect sensitive content (text/images)."
-version: 0.1.1
+version: 0.1.2
 homepage: "https://github.com/MatHeartGaming/flutter_ai_sensitive_content_classifier.git"
 
 environment:

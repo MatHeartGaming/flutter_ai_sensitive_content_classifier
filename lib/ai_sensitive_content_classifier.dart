@@ -48,7 +48,7 @@ enum SensitiveClassificanResult {
 /// final classifier = AiTextImageClassifier(apiKey: 'your-key');
 /// final result = await classifier.analyseIsSensitiveContent(text: '...');
 /// ```
-class AiTextImageClassifier implements AiSensitiveClassifier {
+class AiSensitiveContentDetector implements AiSensitiveClassifier {
   final _logger = Logger();
 
   /// Prompt used to guide the Gemini model in classification tasks.
@@ -57,12 +57,12 @@ class AiTextImageClassifier implements AiSensitiveClassifier {
 
   late final GenerativeModel _geminiModel;
 
-  /// Creates an instance of [AiTextImageClassifier].
+  /// Creates an instance of [AiSensitiveContentDetector].
   ///
   /// [apiKey] is required to authenticate with Google's Gemini API.
   /// Optional parameters allow customization of generation behavior:
   /// [model], [temperature], [topP], [topK], [maxOutputTokens].
-  AiTextImageClassifier({
+  AiSensitiveContentDetector({
     required String apiKey,
     String model = 'gemini-2.0-flash-lite',
     double temperature = 0.1,

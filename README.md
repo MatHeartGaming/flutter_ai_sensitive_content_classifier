@@ -40,7 +40,7 @@ Usage:
 ```
 import 'package:ai_sensitive_content_classifier/ai_sensitive_content_classifier.dart';
 
-final classifier = AiTextImageClassifier(
+final classifier = AiSensitiveContentDetector(
   apiKey: 'your-gemini-api-key',
 );
 
@@ -55,7 +55,7 @@ print(result?.textClassification); // e.g., "violence"
 Configurations:
 
 ```
-AiTextImageClassifier({
+AiSensitiveContentDetector({
   required String apiKey,
   String model = 'gemini-2.0-flash-lite',
   double temperature = 0.1,

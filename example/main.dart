@@ -30,7 +30,7 @@ class ContentCheckPage extends StatefulWidget {
 class _ContentCheckPageState extends State<ContentCheckPage> {
   AiClassificationResponse? _result;
   bool _isLoading = false;
-  final _classifier = AiTextImageClassifier(
+  final _classifier = AiSensitiveContentDetector(
     apiKey: 'YOUR_GEMINI_API_KEY', // 🔐 Replace with your actual key
   );
 
