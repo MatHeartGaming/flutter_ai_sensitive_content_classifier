@@ -28,7 +28,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  ai_sensitive_content_classifier: ^0.1.0
+  ai_sensitive_content_classifier: ^0.1.3
 ```
 
 Then run 

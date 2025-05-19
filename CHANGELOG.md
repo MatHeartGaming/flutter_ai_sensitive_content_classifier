@@ -1,3 +1,6 @@
+## 0.1.3
+- Small changes
+
 ## 0.1.2
 - Changed class name to *AiSensitiveContentDetector*
 
